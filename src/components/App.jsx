@@ -60,7 +60,7 @@ export const App = () => {
             })
           );
           setGalleryItems(prevGalleryItems => [
-            ...this.state.galleryItems,
+            ...prevGalleryItems,
             ...newData,
           ]);
           setTotalHits(data.totalHits);
